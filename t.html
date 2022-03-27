@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Aspire Systems</title>
+<link rel="stylesheet" href="t.css">
+<script src="t.js">
+</script>
+
+</head>
+<body background="img.png">
+
+<h1>Project Management</h1>
+<div class="form-center" >
+<form>
+		<table>
+	<tr>
+		<td>
+			Employee Name:<input type="text" placeholder="Enter name" id="name" autofocus autocomplete="off"><br><br>
+			<span id="username" > </span>
+		
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+			Email ID :<input type="email" placeholder="email id" id="email"> <br><br>
+			<span id="useremail"></span>
+		</td>
+	</tr>
+   	
+	<tr>
+		<td>
+			Contact Number :<input type="text" placeholder="Enter phoneNumber" id="phonum" ><br><br>
+			<span id="usernum"></span>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<div id="gender">
+			Gender :<input type="radio" id="Male" name="gender" value="Male" checked>
+	<label for="Male">Male</label>
+	<input type="radio" id="Female" name="gender" value="Female" >
+	<label for="Female">Female</label>
+ 	<input type="radio" id="others" name="gender" value="others">
+	<label for="Others">Others</label><br><br>
+	<span id="usergender"></span>
+</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Technology Assigned :
+			<select name="technames" id="technames">
+			  <option value=" " hidden>Choose from below</option>
+			  <option value="Lamp">Lamp</option>
+			  <option value="EBA">EBA</option>
+			  <option value="Oracle">Oracle</option>
+			 <option value="Dotnet">Dotnet</option>
+		</select><br><br>
+		<span id="tech"></span>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<button type="submit" id="submit" onclick="doclick()">Submit</button>
+
+		</td>
+	</tr>
+	<div id="result">
+
+	</div>
+</table>
+</form>
+</div>
+
+
+</body>
+</html> 
